@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Wellington Go Club</string>
+    <string name="address">Biz Dojo, 113 Tory Street, Wellington</string>
+    <string name="meetuplink"><a href="https://www.meetup.com/Wellington-Go-Players/">Wellington Go Players Meetup Group</a></string>
+</resources>
