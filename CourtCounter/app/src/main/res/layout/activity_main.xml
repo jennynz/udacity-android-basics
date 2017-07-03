@@ -1,43 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.jennynz.android.courtcounter.MainActivity"
-    android:padding="16dp">
+    android:padding="16dp"
+    tools:context="com.jennynz.android.courtcounter.MainActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/team_name"
+        android:layout_margin="4dp"
         android:gravity="center_horizontal"
-        android:layout_margin="4dp"/>
+        android:text="@string/team_name" />
+
     <TextView
         android:id="@+id/team_a_score"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="3"
+        android:layout_margin="4dp"
         android:gravity="center_horizontal"
-        android:layout_margin="4dp"/>
+        android:text="@string/zero" />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/three_points"
         android:layout_margin="8dp"
-        android:onClick="addThreePoints"/>
+        android:onClick="addPoints"
+        android:tag="3"
+        android:text="@string/three_points" />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/two_points"
-        android:onClick="addTwoPoints"
-        android:layout_margin="8dp"/>
+        android:layout_margin="8dp"
+        android:onClick="addPoints"
+        android:tag="2"
+        android:text="@string/two_points" />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/free_throw"
-        android:onClick="addOnePoint"
-        android:layout_margin="8dp"/>
+        android:layout_margin="8dp"
+        android:onClick="addPoints"
+        android:tag="1"
+        android:text="@string/free_throw" />
 
 </LinearLayout>
